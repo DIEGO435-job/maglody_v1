@@ -1,0 +1,107 @@
+/* Blog detalle: Bizcocho esponjoso */
+.blog-detail-hero {
+  background: linear-gradient(120deg, #A91B47 60%, #f8b6c1 100%);
+  color: #fff;
+  min-height: 220px;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+.blog-title-efect {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  animation: fadeInDown 1.2s;
+}
+.blog-detail-date {
+  font-size: 1.1rem;
+  color: #ffe6f0;
+  opacity: 0.85;
+  margin-bottom: 0;
+  animation: fadeInUp 1.2s;
+}
+.blog-detail-img {
+  max-height: 340px;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(139,21,56,0.13);
+  animation: fadeIn 1.2s;
+}
+.blog-detail-content h2, .blog-detail-content h3 {
+  color: #A91B47;
+  font-weight: bold;
+}
+.blog-list {
+  margin-bottom: 1.2rem;
+  padding-left: 1.2rem;
+}
+.blog-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+}
+.blog-detail-quote {
+  background: #f8b6c1;
+  color: #8B1538;
+  border-left: 5px solid #A91B47;
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.15rem;
+  font-style: italic;
+  position: relative;
+}
+.blog-quote-mark {
+  font-size: 2.2rem;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  color: #A91B47;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+.blog-detail-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-detail-content .row.g-3 img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+/* Asegura que todas las columnas tengan la misma altura */
+.row.g-4 {
+  align-items: stretch;
+}
+
+/* Hace que todas las tarjetas ocupen el 100% de la altura de la columna */
+.blog-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Igualar altura de las imágenes de portada en las tarjetas del blog */
+.blog-card-img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+body {
+  /* Fondo degradado */
+  min-height: 100vh;
+  background: linear-gradient(to top, #cf6687eb 0%, #eeda9a 60%, #ffffffb3 100%);
+  background-attachment: fixed;
+}
